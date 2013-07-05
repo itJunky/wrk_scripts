@@ -3,6 +3,8 @@ wrk_scripts
 
 Working scripts
 
-local_backup.sh -- ัะบั€ะธะฟั ะดะปั ัะพะทะดะฐะฝะธั ะฑัะบะฐะฟะพะฒ ะบะฐัะฐะปะพะณะฐ www ะธ ะฒัะตั… ะฑะฐะท ะดะฐะฝะฝัั…
+local_backup.sh -- ฟฟฟฟฟฟ ฟฟฟ ฟฟฟฟฟฟฟฟ ฟฟฟฟฟฟฟ ฟฟฟฟฟฟฟฟ www ฟ ฟฟฟฟ ฟฟฟ ฟฟฟฟฟฟ
 
-local_backup_cleaner.sh -- ัะบั€ะธะฟั ะดะปั ะพัะธััะบะธ ะพั ััะฐั€ัั… ะฑัะบะฐะฟะพะฒ
+local_backup_cleaner.sh -- ฟฟฟฟฟฟฟฟ ฟฟฟฟฟฟ ฟฟฟฟฟฟฟ
+
+add_new_virtualhost.sh -- ฟฟฟฟฟฟฟฟฟฟ ฟฟฟฟฟฟ ฟฟฟฟฟฟฟฟฟฟฟฟ ฟฟฟฟฟ ฟ Nginx/Apache/MySQL

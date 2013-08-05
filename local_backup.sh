@@ -9,6 +9,7 @@ PATH_TO_BACKUP=/${BACKUP_DIR}/${LHOST}
 
 function create_backup()
 {       # Creating files backup
+        mkdir -p /${PATH_TO_BACKUP}
         FILENAME="${DATE}-files.tar.gz"
         tar -czf /${PATH_TO_BACKUP}/${FILENAME} /www/*
         

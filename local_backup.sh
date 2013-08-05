@@ -24,7 +24,7 @@ function mysql_bac()
                 mysqldump ${dtb} > /usr/backup/${LHOST}/db/${dtb}.sql
         done
 
-        #ls -l /usr/backup/${LHOST}/db/
+        #ls -l /usr/backup/${LHOST}/db/ # DEBUG
         tar -czf /usr/backup/${LHOST}/${FILENAME} /usr/backup/${LHOST}/db
         echo "Removing temporary files"
         rm /usr/backup/${LHOST}/db/*.sql
@@ -35,7 +35,7 @@ function sync_bac()
         PATH_TO_BACKUP=/usr/backup/${LHOST}
         LATEST_FILES=`find $PATH_TO_BACKUP -type f -name "*" -print0 | xargs -0 ls -t`
         ARRAY_FILES=($LATEST_FILES)
-        #echo ${ARRAY_FILES[*]} 
+        #echo ${ARRAY_FILES[*]}         # DEBUG
         sudo -u backup scp `echo ${ARRAY_FILES[0]} ` backup@${RHOST}:$PATH_TO_BACKUP
         sudo -u backup scp `echo ${ARRAY_FILES[1]} ` backup@${RHOST}:$PATH_TO_BACKUP
 }

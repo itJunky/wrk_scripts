@@ -46,5 +46,5 @@ function sync_backup()
 ### MAIN ###
 
 create_backup
-#mysql_backup  # Exec from create_backup()
-sync_backup
+#mysql_backup   # Exec from create_backup()
+sync_backup     # Sync backup files with remote storage
